@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/costom.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    /> -->
+    <title>Quote generator</title>
+  </head>
+  <body class="">
+    <div class="flex justify-center items-center h-screen px-6">
+      <!-- container -->
+      <div
+        id="q-container"
+        class="hidden outline outline-teal-600 flex flex-col w-[450px] md:w-[768px] p-4 shadow-lg"
+      >
+        <div class="relative bg-blue-50 flex flex-col p-4">
+          <span id="quote" class="text-lg md:text-3xl"> Quotes </span>
+          <div class="text-end mt-4">
+            <span id="author" class="text-xs italic">author</span>
+          </div>
+
+          <!-- absolute  -->
+          <div
+            class="absolute -top-8 -left-2 text-5xl font-sans font-bold text-teal-500"
+          >
+            ,,
+          </div>
+          <div
+            class="absolute bottom-0 right-0 text-5xl font-sans font-bold text-teal-500"
+          >
+            ,,
+          </div>
+        </div>
+        <!-- buttons contianer -->
+        <div class="flex items-center justify-between mt-6">
+          <button
+            id="share"
+            title="share"
+            class="px-4 py-2 text-white bg-teal-600 text-xs border-b-4 border-b-teal-500 hover:border-b-0 hover:border-t-4 border-t-teal-600 transition-all duration-500 rounded-sm"
+          >
+            <a href="#" class="">share</a>
+            <!-- twitter icon -->
+            <!-- <i class="fab fa-twitter"></i> -->
+          </button>
+          <div class="flex space-x-2 items-center group p-2">
+            <div
+              class="w-2 h-2 rounded-full group-hover:animate-ping bg-rose-500 transition duration-500"
+            ></div>
+
+            <button
+              id="newQuote"
+              title="new quote"
+              class="text-teal-700 text-xs hover:text-teal-800 border-2 border-white hover:border-teal-700 p-2 transition duration-500"
+            >
+              <a href="#">new quote</a>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Loader -->
+      <div
+        class="hidden loader w-[120px] h-[120px] boder-[16px] border-[16px] border-gray-300 border-t-blue-300 rounded-full animate-spin"
+        id="loader"
+      ></div>
+    </div>
+
+    <!-- Script -->
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
