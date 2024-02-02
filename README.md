@@ -1,2 +1,3 @@
 # Quote-generator
 a simple JavaScript project just to practice APIs, DOM,...
+the link : https://zarafshan-asghari.github.io/Quote-generator/
